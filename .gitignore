@@ -46,4 +46,9 @@ yarn-error.log*
 
 # Large example files
 example/*.json
+example/
+
+# Large JSON files (GitHub limit is 100MB)
 *.json
+!package.json
+!tsconfig*.json

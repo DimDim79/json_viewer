@@ -27,6 +27,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Original Requirements
 - **Requirements v2**: `Requirements_Document_v2.md` - Current requirements with technical details
 
+## Repository Information
+
+- **GitHub URL**: https://github.com/DimDim79/json_viewer
+- **Clone**: `git clone https://github.com/DimDim79/json_viewer.git`
+- **Main branch**: `main`
+
 ## Project Overview
 
 JSON Content Viewer - A dual-mode (desktop/web) application for viewing and searching large JSON files (150-250MB) containing customer scoring data. Built with Electron + React + TypeScript.

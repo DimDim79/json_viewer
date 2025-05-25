@@ -27,8 +27,8 @@
 
 ### 1. Clone Repository
 ```bash
-git clone <repository-url>
-cd JSON_viewer
+git clone https://github.com/DimDim79/json_viewer.git
+cd json_viewer
 ```
 
 ### 2. Install Dependencies
@@ -147,3 +147,47 @@ npm install
 - Ensure using production build
 - Check available system memory
 - Monitor browser console for errors
+
+## Deployment to Other Workstations
+
+### Quick Deployment Steps
+1. **Clone from GitHub:**
+   ```bash
+   git clone https://github.com/DimDim79/json_viewer.git
+   cd json_viewer
+   npm install
+   ```
+
+2. **Run the application:**
+   - Windows: Double-click `start-web.bat`
+   - Command line: `npm run serve`
+   - Development: `npm run dev:vite`
+
+### For IT Administrators
+To deploy without requiring npm install on each workstation:
+
+1. **Pre-build on one machine:**
+   ```bash
+   git clone https://github.com/DimDim79/json_viewer.git
+   cd json_viewer
+   npm install
+   npm run build:vite
+   ```
+
+2. **Create deployment package:**
+   - Copy `dist/` folder
+   - Copy `server.js`
+   - Copy `package.json` (minimal version)
+   
+3. **On target workstations:**
+   - Install Node.js
+   - Copy deployment package
+   - Run: `npm install express && node server.js`
+
+### Keeping Updated
+```bash
+# On any workstation with git
+git pull origin main
+npm install  # Only if dependencies changed
+npm run build:vite
+```

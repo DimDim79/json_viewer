@@ -2,6 +2,15 @@
 
 A high-performance desktop and web application for viewing and searching large JSON files (150-250MB) containing customer scoring data. Designed for troubleshooting data ingestion issues.
 
+## 📥 Installation
+
+### Clone from GitHub
+```bash
+git clone https://github.com/DimDim79/json_viewer.git
+cd json_viewer
+npm install
+```
+
 ## 🚀 Quick Start
 
 ### Option 1: Web Server (Recommended for restricted environments)
@@ -107,6 +116,28 @@ See [future ideas](knowledge_base/features/future-ideas.md) for planned features
 - Export search results
 - Search history
 - Advanced filtering options
+
+## 🚀 Deployment on Other Workstations
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/DimDim79/json_viewer.git
+   cd json_viewer
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the application:**
+   - Windows: Double-click `start-web.bat`
+   - Command line: `npm run serve`
+   - Development: `npm run dev:vite`
+
+## 📦 Example Files
+
+Large example JSON files (>100MB) are not included in the repository due to GitHub size limits. Place your JSON files locally for testing.
 
 ## 🤝 Contributing
 

@@ -43,3 +43,7 @@ yarn-error.log*
 
 # Optional - include if you want to track package-lock.json
 # Remove the package-lock.json line above if you want to commit it
+
+# Large example files
+example/*.json
+*.json
